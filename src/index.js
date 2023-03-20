@@ -8,10 +8,10 @@ const port = 4500;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use('/' , express.static(path.join((__dirname , "./pages"))));
+app.use('/' , express.static(path.join((__dirname , "./public"))));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../pages/index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
 })
 
 app.listen(port, () => {
