@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  bootstrap: ^5.2.3
   express: ^4.18.2
+  jquery: ^3.6.4
 
 dependencies:
+  bootstrap: 5.2.3
   express: 4.18.2
+  jquery: 3.6.4
 
 packages:
 
@@ -38,6 +42,12 @@ packages:
       unpipe: 1.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /bootstrap/5.2.3:
+    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
     dev: false
 
   /bytes/3.1.2:
@@ -225,6 +235,10 @@ packages:
   /ipaddr.js/1.9.1:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
+    dev: false
+
+  /jquery/3.6.4:
+    resolution: {integrity: sha512-v28EW9DWDFpzcD9O5iyJXg3R3+q+mET5JhnjJzQUZMHOv67bpSIHq81GEYpPNZHG+XXHsfSme3nxp/hndKEcsQ==}
     dev: false
 
   /media-typer/0.3.0:

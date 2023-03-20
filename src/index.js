@@ -5,6 +5,8 @@ const __dirname = path.resolve();
 const app = express();
 const port = 4500;
 
+app.use(express.static(__dirname + "/public"));
+
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "pages","index.html"));
 })
